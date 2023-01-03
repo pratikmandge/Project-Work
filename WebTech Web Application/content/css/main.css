@@ -1,0 +1,268 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* global tag   */
+
+h1 {
+    font-size: 2.5srem;
+    font-weight: 700;
+    color: rbg(35,35,85);
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24,24,49);
+}
+
+/* navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #eff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+nav img {
+    height: 70px;
+    width: 200px;
+    cursor: pointer;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(21,21,100);
+    font-size: 16px;
+    font-weight: 1000;
+    transition: 0.3 ease;
+}
+
+nav .navigation ul li a:hover {
+    color: #fdc93b;    
+}
+
+#main {
+    background-color: orange;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    
+    
+}
+
+#a{
+     
+        background-color: orange;
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 5px;
+     
+        font-size: 2.1 rem;
+        line-height: 1.4;
+        letter-spacing: 0,5rem;
+        text-align: center;
+        color: #eff;
+        
+}
+
+.maindiv{
+    width: 60%;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    background-image: url('/image/logo.jpg');
+    background-size: 100% 100%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 2px 10px 10px white;
+    animation:slider 9s infinite linear;
+}
+
+@keyframes slider{
+    0%{background-image: url('/image/logo.jpg');}
+    35%{background-image: url('/image/logo1.png');}
+    75%{background-image: url('/image/logo2.jpg');}
+
+}
+
+/*a1*/
+
+/*#a1 {
+    background-color: palevioletred;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}*/
+
+
+#main h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+/*#a1 h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}*/
+
+
+#main p {
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+/*#a1 p {
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}*/
+
+#main .btn{
+    margin-top: 30px;
+}
+
+#main a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color:#eff;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+#main a.blue {
+    color: #fff;
+    background: rgb(21,21,100);
+}
+
+#main a.blue:hover{
+    color: rgb(21,21,100);
+    background: #fff;
+    transition: 0.3s;
+}
+
+#main a.yellow {
+    color: #fff;
+    background: red;
+    transition: 0.3s;
+}
+
+#main a.yellow:hover{
+    color: rgb(21,21,100);
+    background: #fff;
+}
+
+/*features*/
+
+#features{
+    padding: 5vw, 8vw, 0, 8vw;
+   text-align: center;
+}
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box { 
+    background: #f9f9ff;
+    text-align: start;
+
+}
+
+#features .fea-box i{
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px, 0, 7px, 0; 
+}
+
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;   
+    color: rgb(46, 46, 59);
+}
+
+#footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+/*#h1 {
+    font-size: 2.1 rem;
+    line-height: 1.4;
+    letter-spacing: 0,5rem;
+    text-align: center;
+    color: #eff;
+    margin-top: 50px;
+
+}*/
